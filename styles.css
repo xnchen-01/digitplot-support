@@ -46,54 +46,11 @@ main {
 }
 
 .app-icon {
-  position: relative;
-  display: grid;
-  place-items: center;
   width: 96px;
   height: 96px;
   border-radius: 22px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0) 38%),
-    linear-gradient(135deg, #5b7cfa 0%, #7b61ff 42%, #ffcf7a 100%);
+  object-fit: cover;
   box-shadow: 0 10px 28px rgba(37, 99, 235, 0.22);
-}
-
-.app-icon::before,
-.app-icon::after,
-.app-icon span {
-  content: "";
-  position: absolute;
-  display: block;
-}
-
-.app-icon::before {
-  left: 25px;
-  bottom: 25px;
-  width: 48px;
-  height: 44px;
-  border-left: 3px solid rgba(255, 255, 255, 0.88);
-  border-bottom: 3px solid rgba(255, 255, 255, 0.88);
-}
-
-.app-icon::after {
-  left: 31px;
-  bottom: 30px;
-  width: 42px;
-  height: 34px;
-  background:
-    radial-gradient(circle at 0 100%, #ffffff 0 4px, transparent 5px),
-    radial-gradient(circle at 36% 66%, #ffffff 0 4px, transparent 5px),
-    radial-gradient(circle at 67% 36%, #ffffff 0 4px, transparent 5px),
-    radial-gradient(circle at 100% 0, #ffffff 0 4px, transparent 5px);
-}
-
-.app-icon span {
-  left: 31px;
-  bottom: 35px;
-  width: 43px;
-  height: 34px;
-  background:
-    linear-gradient(146deg, transparent 0 25%, rgba(255, 255, 255, 0.92) 26% 30%, transparent 31% 49%, rgba(255, 255, 255, 0.92) 50% 54%, transparent 55% 72%, rgba(255, 255, 255, 0.92) 73% 77%, transparent 78%);
 }
 
 .eyebrow {
